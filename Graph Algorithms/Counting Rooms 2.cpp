@@ -36,11 +36,6 @@ int main() {
     ios_base::sync_with_stdio(false);
     cin.tie(0);
     cout.tie(0);
-
-    if(fopen("dauloang.inp","r")) {
-        freopen("dauloang.inp", "r", stdin);
-        freopen("dauloang.out", "w", stdout);
-    }
     
     cin >> n >> m;
     char ch;

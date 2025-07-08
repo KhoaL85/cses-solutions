@@ -44,9 +44,6 @@ int main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(0);cout.tie(0);
-    if(fopen("DigitQueries.inp", "r")) {
-        freopen("DigitQueries.inp", "r", stdin);
-        freopen("DigitQueries.out", "w", stdout); }
     cin>>t;
     while(t--)
         solve();
