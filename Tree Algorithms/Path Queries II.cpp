@@ -1,5 +1,3 @@
-#pragma GCC optimize ("O2")
-#pragma GCC optimize ("O3,unroll-loops,no-stack-protector")
 #include <iostream>
 #include <fstream>
 #include <queue>
