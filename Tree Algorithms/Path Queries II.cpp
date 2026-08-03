@@ -104,6 +104,7 @@ int get(int u, int v)
 }
 void init()
 {
+    curPos=curChain=1;
     dfs(1);
     hld(1);
     build(1,1,n);
@@ -121,7 +122,6 @@ int main()
         g[u].push_back(v);
         g[v].push_back(u);
     }
-    curPos=curChain=1;
     init();
     while(q--)
     {
