@@ -11,9 +11,7 @@ void manacher_odd()
 {
     for(int i=1,l=1,r=0;i<=n;i++)
     {
-        if(i>r)
-            d1[i]=0;
-        else
+        if(i<=r)
             d1[i]=min(r-i,d1[l+r-i]);
         while(i-d1[i]-1>0&&i+d1[i]+1<=n&&s[i-d1[i]-1]==s[i+d1[i]+1])
             d1[i]++;
@@ -29,9 +27,7 @@ void manacher_even()
     for(int i=1,j,l=1,r=0;i<n;i++)
     {
         j=i+1;
-        if(j>r)
-            d2[i]=0;
-        else
+        if(j<=r)
             d2[i]=min(r-j+1,d2[l+r-j]);
         while(i-d2[i]>0&&j+d2[i]<=n&&s[i-d2[i]]==s[j+d2[i]])
             d2[i]++;
